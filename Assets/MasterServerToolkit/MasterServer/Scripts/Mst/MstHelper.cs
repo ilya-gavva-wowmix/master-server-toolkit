@@ -206,12 +206,12 @@ namespace MasterServerToolkit.MasterServer
             }
             catch (WebException e)
             {
-                Logs.Error($"The following error occurred : {e.Status}");
+                Logs.Info($"The following error occurred : {e.Status}");
                 return string.Empty;
             }
             catch (Exception e)
             {
-                Logs.Error($"The following Exception was raised : {e.Message}");
+                Logs.Info($"The following Exception was raised : {e.Message}");
                 return string.Empty;
             }
         }
